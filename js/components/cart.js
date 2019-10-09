@@ -53,21 +53,21 @@ iPresence.Cart = (function() {
             {
                 'code': 'GOKU',
                 'name': 'Goku POP',
-                'img': '/img/product/goku.png',
+                'img': 'img/product/goku.png',
                 'qty': 2,
                 'price': 5
             },
             {
                 'code': 'NARU',
                 'name': 'Naruto POP',
-                'img': '/img/product/naruto.png',
+                'img': 'img/product/naruto.png',
                 'qty': 3,
                 'price': 20
             },
             {
                 'code': 'LUF',
                 'name': 'Luffy POP',
-                'img': '/img/product/luffy.png',
+                'img': 'img/product/luffy.png',
                 'qty': 2,
                 'price': 7.5
             }

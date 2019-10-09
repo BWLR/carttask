@@ -17,9 +17,9 @@ var conf = {
         ]
     },
     dest: {
-        template: './dist',
-        styles:   './dist/css',
-        scripts:  './dist/js',
+        template: './docs',
+        styles:   './docs/css',
+        scripts:  './docs/js',
     },
     watch: {
         templates: ['./index.html', './templates/**/*.html'],
