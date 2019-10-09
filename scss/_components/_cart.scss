@@ -1,7 +1,6 @@
 .c-cart {
     &__inner {
         padding: $grid-gutter-width;
-        transition: all .2s ease-in-out;
 
         @include media-breakpoint-up(sm) {
             padding: ($grid-gutter-width * 2);
