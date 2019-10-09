@@ -1,0 +1,26 @@
+/*  ***************************
+/*  Color palette
+/*  Doesn't include neutral colours such as white (rgb(255,255,255)) or black (rgb(0,0,0))
+*******************************/
+$global-color-1:   #181818;
+$global-color-2:   #212140;
+$global-color-3:   #C5C6CD;
+$global-color-4:   #F3F3F3;
+$global-color-5:   #7350FF;
+$global-color-6:   #E2E2E4;
+$global-color-7:   #8D8E9E;
+
+/*  ***************************
+/*  Fonts
+*******************************/
+$font-sans-serif: "Helvetica Neue",Helvetica,"Open Sans",Arial,sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-medium:  500;
+$font-weight-bold:    700;
+
+/*  ***************************
+/*  Bootstrap 4 settings
+*******************************/
+$grid-columns: 12 !default;
+$grid-gutter-width: 20px !default;

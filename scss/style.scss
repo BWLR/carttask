@@ -1,0 +1,38 @@
+/**
+ *
+ * Customisation and settings
+ *
+ */
+@import "_base/_settings.scss";
+
+/**
+ *
+ * Bootstrap
+ *
+ */
+// Core
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/utilities";
+
+/**
+ *
+ * Project specific
+ *
+ */
+// Core
+@import "_base/main";
+@import "_base/headings";
+
+// Components
+@import "_components/cart";
+@import "_components/summary";
+@import "_components/product";
+
+// Page specific
+@import "_pages/home";

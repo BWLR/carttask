@@ -1,0 +1,124 @@
+.c-summary {
+    &__inner {
+        padding: $grid-gutter-width;
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        background: $global-color-4;
+        transition: all .2s ease-in-out;
+
+        @include media-breakpoint-up(sm) {
+            padding: ($grid-gutter-width * 2) ($grid-gutter-width * 1.5);
+        }
+
+        h2 {
+            border-bottom-color: $global-color-6;
+        }
+    }
+
+    &__list {
+        flex: 1 0 auto;
+    }
+
+    // Summary
+    &__items {
+        display: flex;
+        flex-wrap: nowrap;
+
+        &-label {
+            flex: 1 0 auto;
+        }
+
+        &-value {
+            flex: 1 0 auto;
+            text-align: right;
+            font-weight: $font-weight-bold;
+            font-size: 1.9rem;
+        }
+    }
+
+    // Discounts
+    &__discounts {
+        border-top: solid 2px $global-color-6;
+        border-bottom: solid 2px $global-color-6;
+        margin: ($grid-gutter-width * 1.5) 0;
+        padding: $grid-gutter-width 0;
+
+        &-heading {
+            text-transform: uppercase;
+            color: $global-color-7;
+            font-weight: $font-weight-regular;
+            padding: 0;
+            margin: 0 0 ($grid-gutter-width / 2);
+        }
+    }
+    &__discounts-items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 10px 0;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        &-label {
+            flex: 1 0 auto;
+        }
+
+        &-value {
+            flex: 1 0 auto;
+            text-align: right;
+            font-weight: $font-weight-bold;
+        }
+    }
+
+    // Checkout
+    &__checkout {
+        margin-top: $grid-gutter-width;
+        border-top: solid 2px $global-color-6;
+        padding: 15px 0 0;
+        flex: 0 0 auto;
+
+        &-heading {
+            text-transform: uppercase;
+            font-weight: $font-weight-regular;
+            font-size: 1.2rem;
+            display: flex;
+            flex-wrap: nowrap;
+
+            &-label {
+                flex: 1 0 auto;
+            }
+
+            &-value {
+                flex: 1 0 auto;
+                text-align: right;
+                font-weight: $font-weight-bold;
+                font-size: 1.9rem;
+            }
+        }
+    }
+
+    &__checkout-button {
+        outline: 0;
+        background: $global-color-5;
+        color: #fff;
+        display: block;
+        width: 100%;
+        padding: ($grid-gutter-width / 2) 0;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        margin-top: 25px;
+        transition: all .2s ease;
+        font-weight: $font-weight-bold;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background: darken($global-color-5, 5%);
+        }
+    }
+}

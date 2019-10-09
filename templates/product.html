@@ -1,0 +1,24 @@
+<div class="c-product">
+    <div class="row">
+        <div class="col-7 col-md-5">
+            <a href="#" class="c-product__details" title="More details for ${name} (Product code ${code})">
+                <img class="c-product__img" data-src="${img}" />
+                <span class="c-product__name">${name}</span>
+                <span class="c-product__code">Product code ${code}</span>
+            </a>
+        </div>
+        <div class="col-5 col-md-3">
+            <span class="c-product__qty">
+                <a href="#" class="c-product__qty-mod js-c-product__qty-mod" data-qty="-" title="Decrease quantity">-</a>
+                    <input type="number" class="c-product__qty-number js-c-product__qty-number" ${qty} min="0" data-code="${code}" />
+                <a href="#" class="c-product__qty-mod js-c-product__qty-mod" data-qty="+" title="Increase quantity">+</a>
+            </span>
+        </div>
+        <div class="col-8 col-md-2">
+            <span class="c-product__price"><span class="d-md-none">Price</span> ${price}</span>
+        </div>
+        <div class="col-4 col-md-2">
+            <span class="c-product__total"><span class="d-md-none">Total</span> <span class="js-c-product__total">${total}</span></span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+{
+  "name": "shoppingcart",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "devDependencies": {
+    "@babel/core": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "browser-sync": "^2.26.7",
+    "del": "^2.2.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.1.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-flatten": "^0.3.1",
+    "gulp-if-else": "^1.0.3",
+    "gulp-load-plugins": "^1.6.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-stylelint": "^9.0.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.10.2",
+    "jshint-stylish": "^2.2.1",
+    "rev-del": "^2.0.0",
+    "stylelint": "^10.1.0",
+    "yargs": "^6.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
+  }
+}

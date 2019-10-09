@@ -1,0 +1,79 @@
+.page__shopping-cart-container {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    position: relative;
+
+    // Checkout complete
+    &.is-checkedout {
+        .c-summary__inner {
+            transform: translateX(100%);
+            opacity: 0;
+            display: none;
+
+            @include media-breakpoint-up(sm) {
+                display: flex;
+            }
+        }
+
+        .c-cart__inner {
+            transition-delay: .3s;
+            transform: translateX(-100%);
+            opacity: 0;
+            display: none;
+
+            @include media-breakpoint-up(sm) {
+                display: block;
+            }
+        }
+
+        .page__shopping-cart-success {
+            transition-delay: .2s;
+            opacity: 1;
+            transform: translateX(0);
+            position: static;
+
+            @include media-breakpoint-up(sm) {
+                transition-delay: .8s;
+                position: absolute;
+            }
+        }
+    }
+}
+
+// This is only used as a JS reference to the product templates
+.js-page__templates,
+.js-discount__template {
+    display: none;
+}
+
+// Thank you message
+.page__shopping-cart-success {
+    transform: translateX(-200%);
+    position: absolute;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: $font-weight-bold;
+    font-style: italic;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 6rem;
+        left: 50%;
+        width: 498px;
+        margin-left: -248px;
+        top: 100px;
+    }
+
+    &-img {
+        display: block;
+        max-width: 100%;
+
+        @include media-breakpoint-up(sm) {
+            border-radius: 10px;
+        }
+    }
+}

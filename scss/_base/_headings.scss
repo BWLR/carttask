@@ -1,0 +1,7 @@
+h1,
+h2 {
+    font-size: 1.7rem;
+    padding: 0 0 15px;
+    margin: 0 0 ($grid-gutter-width * 1.5);
+    border-bottom: solid 2px $global-color-4;
+}

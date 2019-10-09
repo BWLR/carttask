@@ -1,0 +1,26 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Tool specific files #
+#######################
+# vim
+*~
+*.swp
+*.swo
+
+# Visual Studio Code
+.vscode
+
+# Sass preprocessor
+.sass-cache/
+
+# Node
+node_modules/

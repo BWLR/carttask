@@ -1,0 +1,83 @@
+.c-product {
+    $root: &;
+    margin: 0 0 $grid-gutter-width;
+
+    div {
+        align-self: center;
+    }
+
+    &__details {
+        text-align: left;
+        position: relative;
+        padding: 16px 0 0 90px;
+        min-height: 70px;
+        display: block;
+
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: none;
+
+            #{$root}__name {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-width: 70px;
+        border: solid 2px $global-color-6;
+        border-radius: 6px;
+    }
+
+    &__name {
+        display: block;
+        font-weight: $font-weight-bold;
+        color: $global-color-5;
+    }
+
+    &__code {
+        color: $global-color-3;
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    &__qty {
+        &-mod {
+            display: inline-block;
+            padding: 10px 6px;
+            font-weight: $font-weight-bold;
+            text-decoration: none;
+            font-size: 1.9rem;
+
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: none;
+            }
+        }
+        &-number {
+            display: inline-block;
+            border: solid 2px $global-color-6;
+            border-radius: 6px;
+            width: 30px;
+            text-align: center;
+            outline: none;
+            padding: 6px 0 6px 0;
+
+            @include media-breakpoint-up(sm) {
+                width: 60px;
+                padding: 6px 0 6px 14px;
+            }
+        }
+    }
+
+    &__price {
+    }
+
+    &__total {
+    }
+}

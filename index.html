@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FE Tech Task - Shopping Cart</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png" />
+        <meta name="theme-color" content="#212140" />
+        <meta name="msapplication-TileColor" content="#212140" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    </head>
+    <body class="no-js page__shopping-cart">
+        <div class="container">
+            <div class="page__shopping-cart-container js-page__shopping-cart-container">
+                <div class="row">
+                    <div class="col-lg-9 c-cart">
+                        <div class="c-cart__inner">
+                            <h1>Shopping Cart</h1>
+                            <div class="row c-cart__list-headings">
+                                <div class="col-5">Product details</div>
+                                <div class="col-3">Quantity</div>
+                                <div class="col-2">Price</div>
+                                <div class="col-2">Total</div>
+                            </div>
+                            <div class="c-cart__product-list js-c-cart__product-list"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 c-summary">
+                        <div class="c-summary__inner">
+                            <h2>Order Summary</h2>
+                            <div class="c-summary__list">
+                                <div class="c-summary__items">
+                                    <span class="c-summary__items-label js-c-summary__items-label"></span>
+                                    <span class="c-summary__items-value js-c-summary__items-value"></span>
+                                </div>
+                                <div class="c-summary__discounts js-c-summary__discounts">
+                                    <h4 class="c-summary__discounts-heading">Discounts</h4>
+                                    <ul class="c-summary__discounts-items js-c-summary__discounts-items"></ul>
+                                </div>
+                            </div>
+                            <div class="c-summary__checkout">
+                                <h4 class="c-summary__checkout-heading">
+                                    <span class="c-summary__checkout-heading-label">Total cost</span>
+                                    <span class="c-summary__checkout-heading-value js-c-summary__checkout-heading-value"></span>
+                                </h4>
+
+                                <button class="c-summary__checkout-button js-c-summary__checkout-button">Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__shopping-cart-success">
+                    <h4>Thank you!</h4>
+                    <img src="/img/naruto.gif" class="page__shopping-cart-success-img" />
+                </div>
+            </div>
+        </div>
+
+        <div class="js-page__templates">
+            @@include('./templates/product.html')
+        </div>
+        <div class="js-discount__template">
+            @@include('./templates/discount.html')
+        </div>
+        <script type="text/javascript" src="/js/main.js" async></script>
+    </body>
+</html>
